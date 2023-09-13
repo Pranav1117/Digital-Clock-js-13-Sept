@@ -1,0 +1,582 @@
+body{
+    background-color: #3D087B;
+}
+
+
+.main-container{
+    width: 100%;
+    /* padding: 2rem; */
+}
+
+.main-wrapper{
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-section{
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.left-sec-clock{
+    display: none;
+}
+
+
+/* .clockimg{
+  
+} */
+
+.alarm-settime-wrapper{
+    width: 90%;
+}
+
+.settime{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    height: 50vh;
+ 
+}
+.fistdropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.secondropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.thirddropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fourthdropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.settimelogo{
+    width: 34px;
+    height: 34px;
+    
+}
+
+.instr{
+    color: #3D087B;
+    font-size: 18px;
+    width: 8rem;
+}
+
+
+
+
+.texttime{
+    font: normal normal 600 20px/32px Manrope;
+    color: #3D087B;
+    position: relative;
+    top: 53px;
+}
+.dot
+{
+    width: 4px;
+    height: 22px;
+    size: 7px;
+}
+.dot1{
+    
+    position: absolute;
+    top: 47px;
+    left: 196px;
+}
+.dot2{
+    
+    position: absolute;
+    top: 47px;
+    left: 308px;
+}
+.hrs{
+    background-image: url(./media/timeline.jpg);
+    width: 80px;
+    height: 90px;
+    font-size: 36px;
+    align-self: center;
+    text-align: center;
+    color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.mins{
+    background-image: url(./media/timeline.jpg);
+    width: 80px;
+    height: 90px;
+    font-size: 36px;
+    align-self: center;
+    text-align: center;
+    color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.secs{
+    background-image: url(./media/timeline.jpg);
+    width: 80px;
+    height: 90px;
+    font-size: 36px;
+    align-self: center;
+    text-align: center;
+    color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.M{
+    background-image: url(./media/AM_svg.jpg);
+    width: 80px;
+    height: 90px;
+    font-size: 36px;
+    align-self: center;
+    text-align: center;
+    color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.wishes{
+    /* margin-top: 1rem; */
+    background-color: #8A11BF;
+    color: #FFFFFF;
+    width: 90%;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    font-weight: bolder;
+    
+}
+
+.btn-timing-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.btn{
+    width: 50%;
+    height: 50px;
+    border-radius: 4px;
+    background-image: linear-gradient(113deg,#6E54EC,#CB52F8, #FC5EFF, #F1A7C5);
+    color: #FFFFFF;
+    font-size: 24px;
+   
+}
+.btn:hover{
+    background-image: linear-gradient(#F1A7C5,#FC5EFF,#CB52F8,#6E54EC);
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+.timings{
+    background-color: #8A11BF;
+    color: #F25CFE;
+    width: 45%;
+    height: 80px;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+   
+
+}
+
+
+
+.right-section{
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.clock-right-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    width: 90%;
+    height: 130px;
+    z-index: 3;
+}
+
+.div1{
+    border: 1px solid black;
+    width: 80%;
+    background-color: white;
+    height: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 60%;
+}
+
+.div2{
+    border: 1px solid black;
+    width: 70%;
+    background-color: white;
+    height: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 30%;
+
+}
+
+.advice-wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+.advice{
+    color: #8E53F0;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-shadow: 1px 2px 2px;
+    align-items: center;
+    text-transform: uppercase;
+    height: 15vh;
+   
+}
+
+.image{
+    margin-inline:auto ; 
+    width: 90%;
+    height: 23rem;
+    border-radius: 10px;
+    background-image: url(./media/Component\ 30\ –\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+}
+
+
+.texttime{
+    font: normal normal 600 20px/32px Manrope;
+    color: #3D087B;
+    position: relative;
+    top: 50px;
+
+}
+
+
+
+.timeselect1{
+    width: 12rem;
+}
+.timeselect2{
+    width: 12rem;
+}
+.timeselect3{
+    width: 12rem;
+}
+.timeselect4{
+    width: 12rem;
+}
+
+
+
+.icons-container{
+    display: none
+}
+.mobile-img2{
+    display: none;
+}
+.mobile-img3{
+    display: none;
+}
+.mobile-img4{
+    display: none;
+}
+
+
+@media only screen and (min-width:250px) and (max-width:1024px){
+    .div1 ,.div2{
+        display: none;
+    }
+    body{
+        min-height: 160vh;
+    }
+    .clockimg{
+       
+        width: 90%;
+    }
+
+    .main-wrapper{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-section{
+        width: 90%;
+        gap: 1rem;
+    }
+
+    .right-section{
+        width: 90%;
+    }
+
+    .clock_logo{
+        width: 60%;
+    }
+
+    .clock-right-sec{
+        display: none;
+    }
+
+    .left-sec-clock{
+        display: flex;
+    }
+
+    .time{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+        border: 1px solid #EDEDED;
+        border-radius: 5px;
+        width: 100%;
+        height: 130px;
+       
+    }
+
+   
+    .hrs{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 80%;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mins{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 80%;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .secs{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 80%;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .M{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 80%;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size:2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dot{
+        display: none;
+    }
+
+    .alarm-settime-wrapper{width: 100%;}
+
+    .settime{
+        background-color: #FFFFFF;
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        height: 12rem;
+        padding: 4px;
+    }
+
+    .fistdropdown{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+.timeselect1{
+    position: relative;
+    width: 50%;
+}
+.timeselect2{
+    width: 50%;
+
+}
+.timeselect3{
+    width: 50%;
+
+}
+.timeselect4{
+    width: 50%;
+
+}
+.instr{
+    position: relative;
+}
+
+
+#image{
+    object-fit: contain;
+}
+
+
+    .btn-timing-wrapper{
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    
+    .timings{
+        width: 100%;
+        padding: 4px;
+       }
+
+    .btn{
+        width: 100%;
+    }
+
+    .wishes{
+        width: 100%;   
+    }
+
+    .right-section{
+        width: 90%;
+        margin-top:1rem ;
+    }
+
+    .advice-wrapper{
+        width: 100%;
+    }
+
+    .advice{
+        width: 100%;
+        
+    
+    }
+    .image{
+        width: 100%;
+        visibility: visible;
+        min-height: 35rem;
+        }
+    
+    
+}
+
+/* @media only screen and (min-width:768px) and (max-width:1024px){
+    .clock_logo{
+        position: relative;
+        right: 5rem;
+        width: 70%;
+
+
+    }
+    .settime{
+        position: relative;
+        left: 2rem;
+        width: 40%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
